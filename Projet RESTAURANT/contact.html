@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un restaurant sur Tours, avec une ambiance agréable">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contacter Kiss the Cook</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Accueil">Accueil</a></li>
+            <li><a href="menu.html" title="Menu">Menu</a></li>
+            <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Contacter Kiss the Cook</h1>
+
+    <form action="contact.html">
+        <fieldset>
+            <legend>Nous Contacter</legend>
+            <div>
+                <!--Créer un email-->
+                <label for="emailinput">Votre E-mail</label>
+                <input type="text" name="email" id="emailinput" placeholder="Entrez votre courriel" required>
+            </div>
+
+
+            <div>
+                <!--Choisir une pièce jointe-->
+                <label for="fileinput">Pièce jointe</label>
+                <input type="file" name="file" id="fileinput" placeholder="Entrez votre courriel" required>
+            </div>
+
+
+            <div>
+                <!--Choisir une date-->
+                <label for="emailinput">Date</label>
+                <input name="email" id="emailinput" placeholder="Entrez votre courriel" required type="date">
+            </div>
+
+            <!--Entrer une case (nom, prenom...)-->
+            <div>
+                <label for="nameinput">Votre Nom</label>
+                <input type="text" name="firstname" id="nameinput">
+            </div>
+            <div>
+
+
+                <!--Comparaison à cocher-->
+                <label for="masculin">Masculin</label>
+                <!--Checked est utile pour cocher une case par default-->
+                <!--Checked se place dans l'INPUT-->
+                <input type="radio" name="sexe" id="masculin" checked>
+            </div>
+
+            <!--Comparaison à cocher-->
+            <div>
+                <label for="feminin">Féminin</label>
+                <input type="radio" name="sexe" id="feminin">
+            </div>
+
+
+            <!--Liste déroulante-->
+            <div>
+                <label for="sexe">Sexe</label>
+                <select name="sexe" id="sexe">
+                    <option>Masculin</option>
+                    <option>Féminin</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password">
+            </div>
+
+            <!--Cocher une case-->
+            <div>
+                <label><input type="checkbox" name="CGU">J'accepte les CGU</label>
+            </div>
+
+            <!--Entrer un message-->
+            <div>
+                <label for="message">Entrez votre message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message"></textarea>
+            </div>
+
+
+            <div>
+                <!--Envoyer un email + bouton-->
+                <input type="submit" value="Envoyer un email">
+            </div>
+            <div>
+                <!--Bouton-->
+                <button type="submit">Envoyer</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
